@@ -25,19 +25,13 @@ public class Main {
                 Date datumDate = new Date(godina, mjesec, dan);
                 student = new Student("Ime", "Prezime", datumDate, "12345", Odsjek.RI, 2);
                 uspjesanUnos = true;
-
-                // After successful student creation, prompt for grades
                 System.out.print("Unesite ocjene studenta: (x,y,...): ");
                 String ocjeneInput = scanner.nextLine();
-
-                // Split the input string by commas and parse each grade
                 String[] ocjeneArray = ocjeneInput.split(",");
                 List<Integer> ocjeneList = new ArrayList<>();
                 for (String ocjena : ocjeneArray) {
                     ocjeneList.add(Integer.parseInt(ocjena.trim()));
                 }
-
-                // Set the parsed grades to the student
                 student.setOcjene(ocjeneList);
 
             } catch (PremladStudentException e) {
@@ -48,8 +42,6 @@ public class Main {
                 System.out.println("Molimo ponovite unos datuma rođenja!");
             }
         }
-
-        // Print student info, which will automatically trigger toString() and calculate the average
         System.out.println("Unos studenta uspješan! " + student);
     }
 }
