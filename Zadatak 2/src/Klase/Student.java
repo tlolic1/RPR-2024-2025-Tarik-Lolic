@@ -93,7 +93,7 @@ public class Student {
     public String toString() {
         try {
             Double prosjek = Prosjek();
-            return String.format("Student: %s %s, broj indeksa: %s, Prosjek: %.2f", ime, prezime, brojIndeksa, prosjek);
+            return String.format("Student: %s %s, broj indeksa: %s, Prosjek: %f", ime, prezime, brojIndeksa, prosjek);
         } catch (DijeljenjeSNulomException e) {
             System.out.println(e.getMessage());
             return "";
