@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ChoiceBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx">
+
+
+  <Label fx:id="ucitavanjeLabel" />
+
+
+  <Label text="Lista osoba" />
+  <ListView fx:id="osobeListView" prefHeight="300.0" prefWidth="300" />
+
+
+  <Label text="Forma za pregled i azuriranje detalja osobe" />
+
+
+  <TextField fx:id="imeField" promptText="Ime" />
+  <TextField fx:id="prezimeField" promptText="Prezime"/>
+  <TextField fx:id="adresaField" promptText="Adresa"/>
+  <DatePicker fx:id="datumRodjenjaPicker" promptText="Datum rodjenja"/>
+  <TextField fx:id="maticniBrojField" promptText="Maticni broj"/>
+
+
+  <ChoiceBox fx:id="ulogaChoiceBox" prefWidth="400.0"/>
+  <Button fx:id="azurirajOsobuButton" text="Azuriraj Osobu"/>
+  <Label fx:id="porukaLabel" visible="false"/>
+</VBox>
+
+
