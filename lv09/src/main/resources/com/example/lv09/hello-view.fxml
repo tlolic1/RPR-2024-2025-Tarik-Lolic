@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lv09.OsobaController">
+  <children>
+    <Label text="Osobe" />
+    <ListView fx:id="osobeListView" />
+    <Label text="Ime" />
+    <TextField fx:id="imeTextField" />
+    <Label text="Prezime" />
+    <TextField fx:id="prezimeTextField" />
+    <Label text="Adresa" />
+    <TextField fx:id="adresaTextField" />
+    <Label text="Datum Rodjenja" />
+    <TextField fx:id="datumRodjenjaTextField" />
+    <Label text="Maticni Broj" />
+    <TextField fx:id="maticniBrojTextField" />
+    <Label text="Uloga" />
+    <ChoiceBox fx:id="ulogaChoiceBox" />
+    <Button fx:id="azurirajOsobuButton" text="Azuriraj" />
+    <Label fx:id="porukaLabel" text="" />
+    <Label fx:id="ucitavanjeLabel" text="" />
+  </children>
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10" />
+  </padding>
+</VBox>

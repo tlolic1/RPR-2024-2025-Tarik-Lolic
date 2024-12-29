@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.lv09.PredmetController">
+    <Label text="Predmeti" />
+    <ListView fx:id="predmetiListView" />
+    <Label text="Naziv" />
+    <TextField fx:id="nazivTextField" />
+    <Label text="ECTS" />
+    <TextField fx:id="ectsTextField" />
+    <Button fx:id="azurirajPredmetButton" text="Azuriraj" />
+    <Label fx:id="porukaLabel" text="" visible="false" />
+</VBox>
